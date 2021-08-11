@@ -1,4 +1,4 @@
-texto = "en un lugar de la mancha de cuyo nombre no puedo acordarme hace mucho que vivia a a a b b b"
+texto = "en un lugar de la mancha de cuyo nombre no puedo acordarme hace mucho que vivia a a a b b b c c"
 
 texto_dividido= texto.split()
 
