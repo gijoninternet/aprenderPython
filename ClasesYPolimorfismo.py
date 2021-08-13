@@ -15,4 +15,4 @@ vehi= Vehiculo("Kia ceed",4,"diesel")
 print(str(vehi))
 print(vehi.__str__())
 print((vehi.__descripcion__()))
-print(vehi.__descripcion())
+print(vehi.__descripcion()) # este no se va a ver porque empieza por __ y no acaba por __
