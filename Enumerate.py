@@ -50,3 +50,11 @@ arr=[]
 for k in range(2, 20):
     arr.append (k)
 print("array", arr)
+
+lista = [x for x in range(6)]
+print(lista)
+
+print(range(7))
+lista2=range(6)
+print(lista2)
+print([x for x in "banana" if (x in 'aeioun')])

@@ -63,3 +63,42 @@ doblar_valores(ns.copy())
 print(ns)
 doblar_valores(ns)  # modificamos directamente los elementos en la sub y afecta al principal también
 print(ns)
+
+# Assign string value
+text = "Learn Python Programming"
+
+# Slice using one parameter
+sliceObj = slice(5)
+print(text[sliceObj])  
+
+# Slice using two parameter
+sliceObj = slice(6,12)
+print(text[sliceObj])  
+
+# Slice using three parameter
+sliceObj = slice(6,25,5)
+print(text[sliceObj])
+
+# Define a dictionary
+customers = {'06753':'Mehzabin Afroze','02457':'Md. Ali',
+'02834':'Mosarof Ahmed','05623':'Mila Hasan', '07895':'Yaqub Ali'}
+
+# Append a new data
+customers['05634'] = 'Mehboba Ferdous'
+
+print("The customer names are:")
+# Print the values of the dictionary
+for customer in customers:
+    print(customers[customer])
+
+# Take customer ID as input to search
+#name = input("Enter customer ID:")
+name = '02457'
+# Search the ID in the dictionary
+for customer in customers:
+    if customer == name:
+        print(f"encontrado {name} {customers[customer]} ")
+        break
+print("lo buscamos con get", name, customers.get(name,"not found"))
+elem=customers.get(name,"not found")
+print(elem)
