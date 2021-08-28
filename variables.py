@@ -1,14 +1,14 @@
-# def cambia(b):
-#     b += [5]
-#     return
+def cambia(b):
+    b += [5]
+    return
 
-# a, b = [3], [4]
-# print(f"Al principio        : a = {a} b = {b}")
-# cambia(a)
-# print(f"Después de cambia(a): a = {a} b = {b}")
-# cambia(b)
-# print(f"Después de cambia(b): a = {a} b = {b}")
-# print("Programa terminado")
+a, b = [3], [4]
+print(f"Al principio        : a = {a} b = {b}")
+cambia(a)
+print(f"Después de cambia(a): a = {a} b = {b}")
+cambia(b)
+print(f"Después de cambia(b): a = {a} b = {b}")
+print("Programa terminado")
 
 
 # def subrutina_ModGlobal_desdeSub():
