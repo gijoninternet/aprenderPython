@@ -1,12 +1,12 @@
-lista_primos_menos= [2,3,5,7,11,13,17,19,23]
-lista_primos=[]
-numero_inicial=403
+lista_primos= [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+
+numero_inicial=8888
 numero=numero_inicial
 dic_divisores={1:1}
 
 
 
-def divisores_primos(numero):
+def divisores_util_lista_primos(numero):
     primo_encontrado = None
     for primo in lista_primos:
         if numero %primo==0:
@@ -28,7 +28,7 @@ def divisores_dividiendo(numero):
 print("calculo divisores del numero ",numero)
 
 dic_divisores[numero]=1
-primo=divisores_primos(numero)
+primo=divisores_util_lista_primos(numero)
 while (primo is not None):
     contador = dic_divisores.get(primo)
     if contador is not None:
@@ -38,7 +38,7 @@ while (primo is not None):
     else:
        dic_divisores[primo] = 1 
     numero=int(numero/primo)
-    primo=divisores_primos(numero)
+    primo=divisores_util_lista_primos(numero)
 else:
     print("buscar primos dividiendo hasta numero/2 de ", numero )
     primo=divisores_dividiendo(numero)
@@ -54,7 +54,7 @@ else:
         primo=divisores_dividiendo(numero)
     else:
         #no ha encontrado divisor pero el numero existe
-        if numero!=numero_inicial:
+        if numero!=numero_inicial and numero!=1:
             contador = dic_divisores.get(numero)
             if contador is not None:
                 dic_divisores[numero] = contador + 1    
